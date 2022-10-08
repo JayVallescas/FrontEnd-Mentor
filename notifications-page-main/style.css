@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;800&display=swap');
+
+:root {
+    /* CSS Variables */
+    --Red: hsl(1,90%,64%);
+    --Blue: hsl(219,85%,26%);
+    --White: hsl(0, 0%, 100%);
+    --Very_light_grayfish_blue: hsl(210, 60%, 98%);
+    --Light_grayish_blue1: hsl(211, 68%, 94%);
+    --Light_grayish_blue2: hsl(205, 33%, 90%);
+    --Grayish_blue: hsl(219, 14%, 63%);
+    --Dark_grayish_blue: hsl(219, 12%, 42%);
+    --Very_dark_blue: hsl(224, 21%, 14%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Very_light_grayfish_blue);
+}
+
+.container-content{
+    width: 45%;
+    border-radius: 1em;
+    background: var(--White);
+    margin: 2em 0;
+}
+
+.container-box{
+    margin: 1em 1.5em;
+}
+
+.box-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top-right{
+    display: flex;
+    align-items: center;
+}
+
+.top-right h3{
+    margin-left: 10px;
+    background-color:var(--Blue);
+    padding: 2px 10px;
+    border-radius: 5px;
+}
+
+.top-right .number{
+    color: white;
+}
+
+.top-left{
+    color: var(--Dark_grayish_blue);
+}
+
+.top-left p:hover{
+    cursor: pointer;
+    color: var(--Blue);
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+/* Box Content */
+
+.box-content{
+    margin-top: 1.5em;
+}
+
+.box-content-box{
+    display: flex;
+    gap: 15px;
+    padding: .67em;
+    border-radius: 6px;
+    margin-bottom: 6px;
+}
+
+.notif{
+    background-color: var(--Light_grayish_blue2);
+}
+
+.box-content-box img{
+    width: 35px;  
+}
+
+.box-content-box .name{
+    color: black;
+}
+
+.box-content-box span{
+    cursor: pointer;
+}
+
+.box-content-box .topic{
+    color: var(--Blue);
+}
+
+.container-box-info{
+    position: relative;
+}
+
+.status{
+    position: absolute;
+    padding: 3px;
+    border-radius: 50%;
+    margin: 8px 5px;
+    background-color: var(--Red);
+
+}
+
+.box-content-box .name:hover{
+    color: var(--Blue);
+}
+
+.box-content-box .date-posted{
+    color: var(--Grayish_blue);
+    margin-top: 1.5px;
+}
+
+
+.box-content-box .private-message{
+    background-color: var(--Light_grayish_blue1);
+    padding: 1em;
+    margin-top: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* Comment Container */
+.comment-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 98%;
+}
+
+.comment-container > img{
+    cursor: pointer;
+}
+
