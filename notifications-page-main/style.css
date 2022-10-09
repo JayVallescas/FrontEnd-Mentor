@@ -142,11 +142,16 @@ p{
 
 
 .box-content-box .private-message{
-    background-color: var(--Light_grayish_blue1);
+    border: 1px solid var(--Grayish_blue);
     padding: 1em;
     margin-top: 10px;
     border-radius: 6px;
     cursor: pointer;
+}
+
+.private-message:hover{
+    background-color: var(--Light_grayish_blue1);
+    border-color: white;
 }
 
 /* Comment Container */
